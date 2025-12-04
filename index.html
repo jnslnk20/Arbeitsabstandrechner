@@ -63,6 +63,10 @@
       gap: 0.75rem;
     }
 
+    header h1 {
+      font-size: 1.2rem;
+      }
+    }
     .card {
       background: var(--card);
       border-radius: 1rem;
@@ -89,13 +93,15 @@
     }
 
     .buttons {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 0.3rem;
+      display: flex;
+      flex-direction: column;   /* untereinander */
+      gap: 0.35rem;
       margin-top: 0.25rem;
+      width: 100%;              /* so breit wie die Card-Innenfläche */
     }
 
     .btn {
+      width: 100%;              /* nimmt ganze Breite der Button-Box */
       padding: 0.5rem 0.25rem;
       font-size: 1rem;
       border-radius: 0.6rem;
@@ -310,4 +316,5 @@
   </script>
 </body>
 </html>
+
 
