@@ -14,11 +14,11 @@
     --text-faint:#57595d;
     --accent-line:#2a2d31;
 
-    --plus2:#3f9b6a;
-    --plus1:#2f7a54;
-    --zero:#33363b;
-    --minus1:#a34a3f;
-    --minus2:#c25a4a;
+    --plus2:#1f8f5c;
+    --plus1:#3e9575;
+    --zero:#4a4d55;
+    --minus1:#b8695c;
+    --minus2:#d14a30;
 
     --mono: 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
     --grot: -apple-system, 'Helvetica Neue', Arial, sans-serif;
@@ -52,23 +52,11 @@
     padding: 6px 6px 16px;
     text-align:center;
   }
-  header.top .kicker{
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    color: var(--text-faint);
-    text-transform: uppercase;
-  }
   header.top h1{
     font-size: 19px;
     font-weight: 700;
-    margin: 4px 0 0;
+    margin: 0;
     letter-spacing: -0.01em;
-  }
-  header.top h1 .sep{
-    color: var(--text-faint);
-    font-weight: 400;
-    padding: 0 4px;
   }
 
   .row{
@@ -99,7 +87,7 @@
   }
   .robot-head h2{
     margin:0;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
@@ -124,7 +112,7 @@
     appearance:none;
     border:none;
     border-radius: 12px;
-    padding: 13px 6px;
+    padding: 9px 6px;
     font-family: var(--mono);
     font-size: 16px;
     font-weight: 700;
@@ -214,7 +202,7 @@
   }
   .stat-line .value{
     font-family: var(--mono);
-    font-size: 14px;
+    font-size: 12.5px;
     font-weight: 700;
   }
   .stat-line.offset{
@@ -247,15 +235,16 @@
 
   footer.note{
     text-align:center;
-    padding: 18px 10px 4px;
-    font-family: var(--mono);
-    font-size: 10px;
+    padding: 18px 14px 4px;
+    font-family: var(--grot);
+    font-size: 11px;
     color: var(--text-faint);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
   }
 
   @media (min-width: 480px){
-    .val-btn{ font-size: 17px; padding: 15px 6px; }
+    .val-btn{ font-size: 17px; padding: 11px 6px; }
     header.top h1{ font-size: 22px; }
   }
 </style>
@@ -264,8 +253,7 @@
 <div class="app">
 
   <header class="top">
-    <div class="kicker">Arbeitsabstand · Kalibrierung</div>
-    <h1>Rob 2<span class="sep">/</span>Rob 1</h1>
+    <h1>Arbeitsabstandrechner</h1>
   </header>
 
   <div class="row">
@@ -352,7 +340,7 @@
     </section>
   </div>
 
-  <footer class="note">lokal · kein Server · kein Speichern</footer>
+  <footer class="note">Arbeitsabstandrechner für Projekt Athena des Fraunhofer IWS</footer>
 </div>
 
 <script>
