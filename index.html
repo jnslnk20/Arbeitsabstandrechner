@@ -243,6 +243,20 @@
     line-height: 1.4;
   }
 
+  .info-figure{
+    margin: 10px 0 0;
+    padding: 0;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .info-figure img{
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+
   @media (min-width: 480px){
     .val-btn{ font-size: 17px; padding: 11px 6px; }
     header.top h1{ font-size: 22px; }
@@ -339,6 +353,10 @@
       </div>
     </section>
   </div>
+
+  <figure class="info-figure">
+    <img src="treppeninfo.png" alt="Erklärung des Messverfahrens (Treppenmethode)" loading="lazy">
+  </figure>
 
   <footer class="note">Arbeitsabstandrechner für Projekt Athena des Fraunhofer IWS</footer>
 </div>
