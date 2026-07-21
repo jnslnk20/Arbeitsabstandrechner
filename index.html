@@ -14,11 +14,13 @@
     --text-faint:#57595d;
     --accent-line:#2a2d31;
 
+    --plus3:#156b46;
     --plus2:#1f8f5c;
     --plus1:#3e9575;
     --zero:#4a4d55;
     --minus1:#b8695c;
     --minus2:#d14a30;
+    --minus3:#a8341f;
 
     --mono: 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
     --grot: -apple-system, 'Helvetica Neue', Arial, sans-serif;
@@ -104,7 +106,7 @@
   .btn-stack{
     display:flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
     margin-bottom: 12px;
   }
 
@@ -112,7 +114,7 @@
     appearance:none;
     border:none;
     border-radius: 12px;
-    padding: 9px 6px;
+    padding: 7px 6px;
     font-family: var(--mono);
     font-size: 16px;
     font-weight: 700;
@@ -128,11 +130,13 @@
     transform: scale(0.96);
     filter: brightness(1.15);
   }
+  .val-btn.p3{ background: var(--plus3); }
   .val-btn.p2{ background: var(--plus2); }
   .val-btn.p1{ background: var(--plus1); }
   .val-btn.z0{ background: var(--zero); color: var(--text-dim); }
   .val-btn.m1{ background: var(--minus1); }
   .val-btn.m2{ background: var(--minus2); }
+  .val-btn.m3{ background: var(--minus3); }
 
   .table-wrap{
     border: 1px solid var(--accent-line);
@@ -258,7 +262,7 @@
   }
 
   @media (min-width: 480px){
-    .val-btn{ font-size: 17px; padding: 11px 6px; }
+    .val-btn{ font-size: 17px; padding: 9px 6px; }
     header.top h1{ font-size: 22px; }
   }
 </style>
@@ -279,11 +283,13 @@
       </div>
 
       <div class="btn-stack">
+        <button class="val-btn p3" data-val="3">+3</button>
         <button class="val-btn p2" data-val="2">+2</button>
         <button class="val-btn p1" data-val="1">+1</button>
         <button class="val-btn z0" data-val="0">0</button>
         <button class="val-btn m1" data-val="-1">-1</button>
         <button class="val-btn m2" data-val="-2">-2</button>
+        <button class="val-btn m3" data-val="-3">-3</button>
       </div>
 
       <div class="table-wrap">
@@ -320,11 +326,13 @@
       </div>
 
       <div class="btn-stack">
+        <button class="val-btn p3" data-val="3">+3</button>
         <button class="val-btn p2" data-val="2">+2</button>
         <button class="val-btn p1" data-val="1">+1</button>
         <button class="val-btn z0" data-val="0">0</button>
         <button class="val-btn m1" data-val="-1">-1</button>
         <button class="val-btn m2" data-val="-2">-2</button>
+        <button class="val-btn m3" data-val="-3">-3</button>
       </div>
 
       <div class="table-wrap">
