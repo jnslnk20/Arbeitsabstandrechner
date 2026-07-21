@@ -14,6 +14,7 @@
     --text-faint:#57595d;
     --accent-line:#2a2d31;
 
+    --plus4:#0f5636;
     --plus3:#156b46;
     --plus2:#1f8f5c;
     --plus1:#3e9575;
@@ -130,6 +131,7 @@
     transform: scale(0.96);
     filter: brightness(1.15);
   }
+  .val-btn.p4{ background: var(--plus4); }
   .val-btn.p3{ background: var(--plus3); }
   .val-btn.p2{ background: var(--plus2); }
   .val-btn.p1{ background: var(--plus1); }
@@ -192,28 +194,38 @@
   }
   .stat-line{
     display:flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    padding: 7px 10px;
     border-radius: 10px;
     background: #101215;
     border: 1px solid var(--accent-line);
   }
   .stat-line .label{
-    font-size: 11px;
+    font-size: 10.5px;
     color: var(--text-dim);
     letter-spacing: 0.02em;
+    white-space: nowrap;
   }
   .stat-line .value{
     font-family: var(--mono);
     font-size: 12.5px;
     font-weight: 700;
+    white-space: nowrap;
   }
   .stat-line.offset{
     background: #12181a;
     border-color: #253a35;
   }
   .stat-line.offset .label{ color: #7fb8a8; }
+
+  .undo-row{
+    margin-bottom: 10px;
+  }
+  .undo-row .act-btn{
+    margin: 0;
+  }
 
   .actions{
     display:flex;
@@ -283,6 +295,7 @@
       </div>
 
       <div class="btn-stack">
+        <button class="val-btn p4" data-val="4">+4</button>
         <button class="val-btn p3" data-val="3">+3</button>
         <button class="val-btn p2" data-val="2">+2</button>
         <button class="val-btn p1" data-val="1">+1</button>
@@ -290,6 +303,10 @@
         <button class="val-btn m1" data-val="-1">-1</button>
         <button class="val-btn m2" data-val="-2">-2</button>
         <button class="val-btn m3" data-val="-3">-3</button>
+      </div>
+
+      <div class="undo-row">
+        <button class="act-btn" data-undo>Letzten Eintrag löschen</button>
       </div>
 
       <div class="table-wrap">
@@ -313,7 +330,6 @@
       </div>
 
       <div class="actions">
-        <button class="act-btn" data-undo>Letzten Eintrag löschen</button>
         <button class="act-btn danger" data-reset>Zurücksetzen</button>
       </div>
     </section>
@@ -326,6 +342,7 @@
       </div>
 
       <div class="btn-stack">
+        <button class="val-btn p4" data-val="4">+4</button>
         <button class="val-btn p3" data-val="3">+3</button>
         <button class="val-btn p2" data-val="2">+2</button>
         <button class="val-btn p1" data-val="1">+1</button>
@@ -333,6 +350,10 @@
         <button class="val-btn m1" data-val="-1">-1</button>
         <button class="val-btn m2" data-val="-2">-2</button>
         <button class="val-btn m3" data-val="-3">-3</button>
+      </div>
+
+      <div class="undo-row">
+        <button class="act-btn" data-undo>Letzten Eintrag löschen</button>
       </div>
 
       <div class="table-wrap">
@@ -356,7 +377,6 @@
       </div>
 
       <div class="actions">
-        <button class="act-btn" data-undo>Letzten Eintrag löschen</button>
         <button class="act-btn danger" data-reset>Zurücksetzen</button>
       </div>
     </section>
